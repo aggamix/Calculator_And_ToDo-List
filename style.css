@@ -1,0 +1,96 @@
+body {
+	font-family: sans-serif;
+	line-height: 1.5;
+
+	display: flex;
+	column-gap: 200px;
+    justify-content: center;
+
+    margin: 50px;
+}
+
+.none { display: none; }
+
+/* ToDo List */
+
+.simple-todo {
+
+}
+
+
+/* Calcultor */
+
+.calc {
+	width: 300px;
+	height: 500px;
+	padding: 18px;
+
+	border: 1px solid #000;
+	border-radius: 20px;
+
+	background-color: #000;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.calc-screen {
+	height: 125px;
+	padding: 10px;
+	display: grid;
+	justify-items: end;
+	align-items: flex-end;	
+	margin-bottom: 25px;
+}
+
+.calc-screen p {
+	text-align: right;
+	font-size: 4rem;
+	margin: 0;
+}
+
+.buttons {
+	display: grid;
+	grid-template-areas: 
+	"ac plus-minus percent division"
+	"seven eigth nine multi"
+	"four five three plus"
+	"zero zero dot equal";
+	grid-gap: 7px;
+	justify-items: center;
+}
+
+.btn {
+	width: 60px;
+	height: 60px;
+
+	background-color: #333;
+	border-radius: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 1.5rem;
+	cursor: pointer;
+	/* cursor: pointer; при наведении на кнопку меняется курсор */
+	user-select: none;
+	/* user-select: none; при нажатии не выделяется*/
+}
+
+/* при наведении изменение цвета кнопки */
+.btn:hover {
+	filter: brightness(120%);
+}
+
+/* при нажатии изменение цвета кнопки */
+.btn:active {
+	filter: brightness(90%);
+}
+
+.bg-grey {
+	background: #a6a6a6;
+} 
+
+.bg-orange {
+	background: #ff9501;
+}
